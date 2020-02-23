@@ -1,0 +1,14 @@
+void main( )
+{
+	struct infix q ;
+	char expr[MAX] ;
+	clrscr( ) ;
+	initinfix ( &q ) ;
+	printf ( "\nEnter an expression in infix form: " ) ;
+	gets ( expr ) ;
+	setexpr ( &q, expr ) ;
+	convert ( &q ) ;
+	printf ( "The Prefix expression is: " ) ;
+	show ( q ) ;
+	getch( ) ;
+}
